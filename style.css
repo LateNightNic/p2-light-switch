@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: linear-gradient(
+        0deg,
+        #f6f3c6,
+        #f2eea3 10%,
+        #9bdaf5 50%,
+        #27adfb 100%);
+
+    --title-color: #092e57;
+    --body-color: #04182f;
+    --button-color: #081d36;
+
+    --button-bg: linear-gradient(
+        #f66029,
+        #f8a72e
+    );
+
+    --font-serif: "Instrument Serif", serif;
+    --font-sans: "Instrument Sans", sans-serif;
+
+    --text-size-base: 1rem;
+    --text-size-md: 1.2rem;
+    --text-size-display: 8rem;    
+}
+
+/* .sunset {
+    --bg: linear-gradient(
+        0deg,
+        #ed4634,
+        #c9460e 10%,
+        #11255b 50%,
+        #02091b 100%);
+
+    --title-color: #7eaee4;
+    --body-color: #cadef6;
+    --button-color: #081d36;
+
+    --button-bg: linear-gradient(
+        #299df6,
+        #ffdeac
+    );
+} */
+
+body {
+    background: var(--bg);
+    height: 100vh;
+    width: 100vw;
+    font-size: var(--text-size-base);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 90vh; 
+}
+
+h1 {
+    font-family: var(--font-serif);
+    font-size: var(--text-size-display);
+    letter-spacing: -0.15rem;
+    filter: blur(1px);
+    color: var(--title-color)
+    
+}
+
+p {
+    font-family: var(--font-sans);
+    font-size: var(--text-size-md);
+    color: var(--body-color);
+}
+
+button {
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    font-size: var(--text-size-base);
+    border-radius: 64px;
+    background: var(--button-bg);
+    border: none;
+    color: var(--button-color);
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+
+
