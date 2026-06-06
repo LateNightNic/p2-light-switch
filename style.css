@@ -25,10 +25,12 @@
 
     --text-size-base: 1rem;
     --text-size-md: 1.2rem;
-    --text-size-display: 8rem;    
+    --text-size-display: 8rem;
+    
+    --fade: 1s ease-in-out;
 }
 
-/* .sunset {
+.sunset-theme {
     --bg: linear-gradient(
         0deg,
         #ed4634,
@@ -44,13 +46,14 @@
         #299df6,
         #ffdeac
     );
-} */
+}
 
 body {
     background: var(--bg);
     height: 100vh;
     width: 100vw;
     font-size: var(--text-size-base);
+    transition: 2s ease-in-out;
 }
 
 article {
@@ -67,7 +70,8 @@ h1 {
     font-size: var(--text-size-display);
     letter-spacing: -0.15rem;
     filter: blur(1px);
-    color: var(--title-color)
+    color: var(--title-color);
+    transition: var(--fade);
     
 }
 
@@ -75,6 +79,7 @@ p {
     font-family: var(--font-sans);
     font-size: var(--text-size-md);
     color: var(--body-color);
+    transition: var(--fade);
 }
 
 button {
@@ -87,10 +92,15 @@ button {
     color: var(--button-color);
     font-weight: 600;
     transition: all 0.2s ease-in-out;
+    
 }
 
 button:hover {
     transform: scale(1.06);
+}
+
+button:active {
+    transform: scale(0.6);
 }
 
 
