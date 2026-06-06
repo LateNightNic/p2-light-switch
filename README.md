@@ -1,0 +1,3 @@
+# Light Switch Project
+
+## About
